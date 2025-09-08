@@ -55,7 +55,7 @@ header a {
   background: white;
 }
 footer {
-  color: white;
+  color: black;
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.396)
     ),
@@ -63,22 +63,24 @@ footer {
 
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
+  padding: 100px 0;
   text-align: center;
+  width: 100%;
 }
 
 footer h3 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
 }
 
 footer p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
   opacity: 0.7;
   margin-right: 20px;
-  line-height: 24px;
+  line-height: 1.5;
+  color: whitesmoke;
 }
 
 footer ul {
