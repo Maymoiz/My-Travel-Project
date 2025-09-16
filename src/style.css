@@ -15,8 +15,7 @@ section{
 .grid{
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 20px;
-  padding: 20px;
+  gap: 64px;
 }
 header{
   background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../images/capetown1.jpg");
@@ -89,7 +88,6 @@ footer p{
   font-weight: 400;
   line-height: 1.5;
   opacity: 0.9;
-  margin-right: 20px;
 }
 footer ul{
   padding: 0;
@@ -121,5 +119,9 @@ footer a:hover{
   }
   header h3{
     font-size: 18px;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
