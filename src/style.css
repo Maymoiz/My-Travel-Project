@@ -108,8 +108,10 @@ main h3{
   max-width: 100%;
 }
 main p{
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
   color: #272044;
   opacity: 0.9;
   margin: 0;
