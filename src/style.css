@@ -8,6 +8,16 @@ body{
   margin: 0 auto;
   
 }
+section{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
 header{
   background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../images/capetown1.jpg");
   background-repeat: no-repeat;
@@ -47,7 +57,7 @@ header a{
   text-decoration: none;
   border-radius: 5px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   transition: 0.3s;
   line-height: 1.5;
@@ -59,8 +69,44 @@ header a:hover{
 footer{
   color: whitesmoke;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 20px;
+  padding: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../images/Capetown.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+footer h3{
+  font-size: 14px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+footer p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-right: 20px;
+}
+footer ul{
+  padding: 0;
+  list-style: none;
+}
+footer a{
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: whitesmoke;
+  opacity: 0.7;
 }
 
 @media (max-width: 768px){
