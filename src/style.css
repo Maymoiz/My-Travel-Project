@@ -11,9 +11,16 @@ body{
 section{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px 5px;
 }
 .grid{
   display: grid;
+}
+.grid-2-columns{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid-3-columns{
   grid-template-columns: 1fr 2fr 2fr;
   gap: 64px;
 }
@@ -39,6 +46,7 @@ header h2{
   margin: 0;
   margin-bottom: 20px;
 }
+
 header h3{
   font-size: 24px;
   font-weight: 900;
@@ -48,6 +56,7 @@ header h3{
   
 
 }
+
 header a{
   display: inline-block;
   background: whitesmoke;
@@ -68,13 +77,42 @@ header a:hover{
 footer{
   color: whitesmoke;
   text-align: center;
-  padding: 50px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../images/Capetown.webp");
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 16px;
   font-weight: 400;
   
+}
+main{
+  background: whitesmoke;
+}
+main h2{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  opacity: 0.3;
+  color: #272044;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+main h3{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  color: #272044;
+}
+.img-responsive{
+  max-width: 100%;
+}
+main p{
+  font-size: 16px;
+  font-style: normal;
+  color: #272044;
+  opacity: 0.9;
+  margin: 0;
 }
 footer h3{
   font-size: 14px;
@@ -120,8 +158,19 @@ footer a:hover{
   header h3{
     font-size: 18px;
   }
+  .grid-3-columns{
+    grid-template-columns: 1fr;
+    
+  }
+  .grid-2-columns{
+    grid-template-columns: 1fr;
+    
+  }
   .grid{
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  section{
+    padding: 20px;
   }
 }
