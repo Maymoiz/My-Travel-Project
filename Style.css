@@ -1,0 +1,52 @@
+:root{--bg:#f3f6f4;--ink:#12231f;--mute:#4f635d;--card:#fff;--line:#cfdad5;--sea:#0b6e63;--sand:#efe3c6;--indigo:#2b3a8c}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1a17;--ink:#e8f0ec;--mute:#9db1a9;--card:#16251f;--line:#2a3d36;--sea:#4cc3b0;--sand:#2c2a1e;--indigo:#9fb0ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+nav{display:flex;flex-wrap:wrap;gap:6px 20px;padding:14px 5vw;border-bottom:1px solid var(--line)}
+nav a{color:var(--ink);text-decoration:none;font-weight:600}
+nav a:hover,nav a[aria-current]{color:var(--sea)}
+nav b{margin-right:auto;font-family:Georgia,serif;font-size:1.2rem}
+header{padding:9vh 5vw 5vh;max-width:900px;margin:0 auto}
+h1{font:700 clamp(2.2rem,6vw,4rem)/1.05 Georgia,"Iowan Old Style",serif;margin:0 0 .4em;letter-spacing:-.02em}
+header p{color:var(--mute);max-width:52ch;margin:0 0 1.6em}
+form{display:flex;gap:10px;flex-wrap:wrap}
+input{flex:1 1 260px;font:inherit;font-size:1.25rem;padding:16px 18px;border:2px solid var(--ink);border-radius:6px;background:var(--card);color:var(--ink)}
+button{font:inherit;font-weight:700;padding:16px 26px;border:0;border-radius:6px;background:var(--sea);color:#fff;cursor:pointer}
+button:hover{filter:brightness(1.1)}
+:focus-visible{outline:3px solid var(--indigo);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chips button{padding:6px 14px;background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:500}
+.chips button:hover{border-color:var(--sea);color:var(--sea);filter:none}
+main{max-width:900px;margin:0 auto;padding:0 5vw 10vh}
+.msg{color:var(--mute)}
+.top{display:flex;align-items:center;gap:18px;margin:10px 0 24px}
+.top .flag{font-size:4rem;line-height:1}
+.top img{width:84px;border:1px solid var(--line);border-radius:4px}
+h2{font:700 1.7rem/1.2 Georgia,serif;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:34px}
+.facts div{background:var(--card);padding:14px 16px}
+.facts small{display:block;color:var(--mute);font-size:.82rem}
+section{margin-bottom:34px}
+h3{font:700 1.15rem Georgia,serif;margin:0 0 12px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+.city{background:var(--card);border-left:5px solid var(--sea);padding:12px 16px;margin-bottom:12px;border-radius:0 6px 6px 0}
+.city h4{margin:0 0 4px;font-size:1.05rem}
+.city ul,.list{margin:0;padding-left:1.2em}
+.hotel{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.hotel span{color:var(--mute)}
+a.btn{display:inline-block;margin:6px 10px 0 0;padding:8px 14px;border:1px solid var(--indigo);border-radius:6px;color:var(--indigo);text-decoration:none;font-weight:600}
+a.btn:hover{background:var(--indigo);color:var(--bg)}
+.note{background:var(--sand);padding:12px 16px;border-radius:6px;margin-bottom:24px}
+@media (prefers-reduced-motion:no-preference){main>*{animation:in .25s ease-out}@keyframes in{from{opacity:.3}}}
+.chips a{padding:6px 14px;border:1px solid var(--line);border-radius:99px;color:var(--ink);text-decoration:none}
+.chips a:hover{border-color:var(--sea);color:var(--sea)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;color:var(--ink);text-decoration:none}
+a.card:hover{border-color:var(--sea)}
+a.card .flag{font-size:2.4rem;display:block}
+a.card small{color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:20px 5vw;color:var(--mute);text-align:center}
+label{display:block;font-weight:600;margin:14px 0 4px}
+textarea,select{font:inherit;width:100%;padding:12px 14px;border:2px solid var(--ink);border-radius:6px;background:var(--card);color:var(--ink)}
+.err{color:#b3261e;font-size:.9rem;min-height:1.2em;margin:2px 0}
+.cform{max-width:560px}
+.cform button{margin-top:14px}
